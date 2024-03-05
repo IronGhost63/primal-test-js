@@ -46,7 +46,7 @@ const Map = ( { locations } ) => {
             onClick={ () => handleSelectedLocation(id) }
           >
             {selectedLocation === id ? (
-              <Dialog title={properties.place} detail={{lat: geometry.coordinates[0], lng: geometry.coordinates[1]}} closeFn={() => setSelectedLocation(null)}/>
+              <Dialog title={properties.place} detail={{lat: geometry.coordinates[0], lng: geometry.coordinates[1], date: properties.time}} closeFn={() => setSelectedLocation(null)}/>
             ) : null}
           </MarkerF>
         ) )}
