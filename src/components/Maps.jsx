@@ -1,5 +1,5 @@
-import { useState, useEffect, useCallback } from "react";
-import { GoogleMap, useJsApiLoader, Marker, InfoWindow, MarkerF } from "@react-google-maps/api";
+import { useState, useEffect } from "react";
+import { GoogleMap, useJsApiLoader, MarkerF } from "@react-google-maps/api";
 import Dialog from "./Dialog";
 
 const Map = ( { locations } ) => {
